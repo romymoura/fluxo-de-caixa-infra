@@ -16,7 +16,7 @@ Repositório da infra
 
 
 
-# Projetos que complementares para o fluxo de caixa
+# Projetos complementares para o fluxo de caixa
 
   * API em .net 8 responsável por fazer os laçamentos de (crédito e debito) / Pesquisar Saldo:  <a href="https://github.com/romymoura/fluxo-de-caixa-lancamento" target="_blank">https://github.com/romymoura/fluxo-de-caixa-lancamento</a>
 
