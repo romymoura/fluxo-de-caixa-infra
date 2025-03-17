@@ -14,3 +14,10 @@ Repositório da infra
   
   Terraform: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 </pre>
+
+
+# Projetos que complementares para o fluxo de caixa
+
+  * API em .net 8 responsável por fazer os laçamentos de (crédito e debito) / Pesquisar Saldo:  https://github.com/romymoura/fluxo-de-caixa-lancamento
+
+  * Worker .net 8 responsável por consolidar o saldo da loja: https://github.com/romymoura/fluxo-de-caixa-consolidacao
