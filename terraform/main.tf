@@ -1,6 +1,13 @@
-provider "aws" {
-  region = var.aws_region
-}
+# provider "aws" {
+#   region = var.aws_region
+#   # endpoint = "http://localhost:4566"  # Verifique se é este o endpoint
+#   # access_key = "test"
+#   # secret_key = "test"
+#   # skip_credentials_validation = true
+#   # skip_requesting_account_id = true
+#   # skip_metadata_api_check = true
+#   # s3_force_path_style = true
+# }
 
 module "vpc" {
   source = "./modules/vpc"
@@ -8,12 +15,12 @@ module "vpc" {
   subnet_ids = var.subnet_ids
 }
 
-module "rds" {
+/*module "rds" {
   source = "./modules/rds"
   db_name = var.db_name
   db_username = var.db_username
   db_password = var.db_password
-}
+}*/
 
 module "sqs" {
   source = "./modules/sqs"
@@ -24,9 +31,11 @@ module "sqs" {
 module "s3" {
   source = "./modules/s3"
   bucket_name = var.bucket_name
-  worker_role_arn = aws_iam_role.worker_role.arn
+#  worker_role_arn = aws_iam_role.worker_role.arn
+  worker_role_arn = "ARN:Teste"
 }
 
+/*
 module "ecs" {
   source = "./modules/ecs"
   ecs_cluster_name      = var.ecs_cluster_name
@@ -37,7 +46,6 @@ module "ecs" {
   s3_bucket_name        = module.s3.bucket_name
   vpc_id                = module.vpc.vpc_id
   subnet_ids            = module.vpc.subnet_ids
-  //execution_role_arn    = var.execution_role_arn
 }
 resource "aws_iam_role" "worker_role" {
   name = "worker-consolidacao-role"
@@ -77,15 +85,13 @@ resource "aws_iam_role_policy" "worker_s3_policy" {
     ]
   })
 }
-data "aws_iam_role" "worker_s3_policy" {
-  name = "worker-consolidacao-role"
-}
+*/
 
 module "lambda" {
   source               = "./modules/lambda"
   identity_server_url  = var.identity_server_url
 }
-
+/*
 module "api_gateway" {
   source = "./modules/api_gateway"
   api_name           = var.api_name
@@ -104,3 +110,8 @@ module "observability" {
   grafana_namespace = var.grafana_namespace
   ecs_task_execution_role_arn   = module.ecs.ecs_task_execution_role_arn
 }
+*/
+
+# data "aws_iam_role" "worker_s3_policy" {
+#   name = "worker-consolidacao-role"
+# }

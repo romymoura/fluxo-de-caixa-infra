@@ -1,10 +1,3 @@
-# Variáveis gerais
-variable "aws_region" {
-  description = "Região da AWS onde os recursos serão criados"
-  type        = string
-  default     = "us-east-1"
-}
-
 # Variáveis para o RDS (PostgreSQL)
 variable "db_name" {
   description = "Nome do banco de dados PostgreSQL"
