@@ -18,6 +18,8 @@ Repositório da infra
   
   * Terraform: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
+  * Vs2022: https://visualstudio.microsoft.com/pt-br/downloads
+
 
 
 # Projetos complementares para o fluxo de caixa
