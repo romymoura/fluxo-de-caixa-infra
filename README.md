@@ -1,6 +1,10 @@
 # fluxo-de-caixa-infra
 Repositório da infra
 
+# Exp da infra
+![Descrição da imagem](.content/estrutura-infra.png)
+
+
 ## Para rodar local é necessário ter as seguintes ferramentas.
 
 
