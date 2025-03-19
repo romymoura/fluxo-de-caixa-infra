@@ -18,6 +18,6 @@ Repositório da infra
 
 # Projetos complementares para o fluxo de caixa
 
-  * API em .net 8 responsável por fazer os laçamentos de (crédito e debito) / Pesquisar Saldo:  <a href="https://github.com/romymoura/fluxo-de-caixa-lancamento" target="_blank">https://github.com/romymoura/fluxo-de-caixa-lancamento</a>
+  * API em .net 8 responsável por fazer os laçamentos de (crédito e debito) / Pesquisar Saldo:  Clique <a href="https://github.com/romymoura/fluxo-de-caixa-lancamento" target="_blank">aqui</a>!
 
-  * Worker .net 8 responsável por consolidar o saldo da loja: https://github.com/romymoura/fluxo-de-caixa-consolidacao
+  * Worker .net 8 responsável por consolidar o saldo da loja: Clique <a href="https://github.com/romymoura/fluxo-de-caixa-consolidacao" target="_blank">aqui</a>!
