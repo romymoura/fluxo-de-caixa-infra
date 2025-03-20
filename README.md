@@ -20,6 +20,8 @@ Repositório da infra
 
   * Vs2022: https://visualstudio.microsoft.com/pt-br/downloads
 
+  * DBeaver: [https://dbeaver.io/download/](https://dbeaver.io/download/)
+
 
 
 # Projetos complementares para o fluxo de caixa
