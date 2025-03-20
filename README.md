@@ -1,7 +1,7 @@
 # fluxo-de-caixa-infra
 Repositório da infra
 
-# Exp da infra
+# Ex: da infra
 ![Descrição da imagem](.content/estrutura-infra.png)
 
 
